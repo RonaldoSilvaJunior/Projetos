@@ -1,0 +1,59 @@
+.boxCorpo
+{
+	position: relative;
+	width: 380px;
+	height: 420px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.boxCorpo::before 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#f8f6f6, #f8f6f6);
+	animation: animate 6s linear infinite;
+}
+.boxCorpo::after 
+{
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#f8f6f6,#f8f6f6);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+
+@keyframes animate 
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+form{
+    position: absolute;
+    inset: 2px;
+	background: #28292d;
+    padding: 50px 40px;
+	border-radius: 8px;
+    z-index: 2;
+    display: flex;
+	flex-direction: column;
+}
