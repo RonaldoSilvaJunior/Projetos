@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+.textoCabecalho{
+    padding: 30px;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    letter-spacing: 0.3em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px #45f3ff5e;
+    max-width: 700px;
+}
+
+
+header{
+    background: #23242a;
+    margin: auto 0 ;
+    max-width: 100%;
+}
+
+.caixa{
+    margin: auto 0 ;
+    max-width: 100%;
+}
+
+.imagemLogo{
+    width: 350px;
+    height: 300px;
+}
+
+.navegação{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #151618;
+    padding: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    text-shadow:2px 2px 2px #45f3ff5e;
+    text-transform: uppercase;
+    
+}
+
+.link:hover{
+    color: aquamarine;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 800px){
+    #logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textoCabecalho{
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        letter-spacing: 0.3em;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8em;
+        text-shadow: 3px 3px 3px #45f3ff5e;
+        padding: 30px;
+    }
+}  
+
