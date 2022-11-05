@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/CSS/CardsHome.css">
     <link rel="stylesheet" href="../assets/CSS/CorpoHome.css">
+    <link rel="stylesheet" href="../assets/CSS/Form.css">
     <title>Home</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
                     <div class="row">
                 <div class="col">
                     <div class="boxCorpo">
-                        <form autocomplete="off">
+                        <form autocomplete="off" class="formMain">
                             <h2>Valorant</h2>
                             <img src="../assets/img/valorant.webp" alt="" class="tamanhoImagemCard" >
                             <p>Domine várias armas e habilidades diferentes e mostre do que é capaz. Atualizado regularmente com novos Agentes, mapas e modos. Novos mapas. Precisão. Novos modos. Baixa latência. Esports. Jogo em Equipe. Novos Agentes. Jogadas táticas. Gratuito.<p>
@@ -50,7 +51,7 @@
 
         <div class="col">
             <div class="boxCorpo">
-                <form autocomplete="off">
+                <form autocomplete="off" class="formMain">
                     <h2>Dota 2</h2>
                     <img src="../assets/img/Dota 2.jpg" alt="" class="tamanhoImagemCard">
                     <p>Dota 2 (Defense of the Ancients 2) é um jogo eletrônico gratuito do gênero batalha multijogador, desenvolvido pela produtora Valve Corporation como sequência do Defense of the Ancients (DotA, uma modificação em um mapa desenvolvido para o jogo Warcraft III: The Frozen Throne)</p>
@@ -60,7 +61,7 @@
 
         <div class="col">
             <div class="boxCorpo">
-                <form autocomplete="off">
+                <form autocomplete="off" class="formMain">
                     <h2>CS:GO</h2>
                     <img src="../assets/img/Cs.jpg" alt="" class="tamanhoImagemCard">
                     <p>Counter-Strike é uma série de jogos eletrônicos de tiro em primeira pessoa multiplayer, no qual times de terroristas e contra-terroristas batalham entre si, respectivamente, realizando um ato de terror e prevenindo-os.</p>
@@ -70,7 +71,7 @@
 
          <div class="col">
             <div class="boxCorpo">
-                <form autocomplete="off">
+                <form autocomplete="off" class="formMain">
                     <h2>Age of Empires IV</h2>
                     <img src="../assets/img/Age of Empires.jpg" alt="" class="tamanhoImagemCard">
                     <p>Age of Empires IV é um jogo eletrônico de estratégia em tempo real desenvolvido pela Relic 
@@ -82,7 +83,7 @@
 
     <div class="col">
         <div class="boxCorpo">
-            <form autocomplete="off">
+            <form autocomplete="off" class="formMain">
                 <h2>Gunbound</h2>
                 <img src="../assets/img/Gunbound.jpg" alt="" class="tamanhoImagemCard">
                 <p>Traduzido de inglês-Gunbound é um jogo de artilharia baseado em turnos, multiplayer e gratuito desenvolvido pela desenvolvedora sul-coreana Softnyx.
@@ -93,7 +94,7 @@
 
     <div class="col">
         <div class="boxCorpo">
-            <form autocomplete="off">
+            <form autocomplete="off" class="formMain">
                 <h2>Combat Arms</h2>
                 <img src="../assets/img/combat arms.jpg" alt="" class="tamanhoImagemCard">
                 <p>Combat Arms é um jogo de tiro em primeira pessoa on-line, criado pela Nexon no formato Massively Multiplayer Online Game.</p>
@@ -104,8 +105,21 @@
 </section>
 </div>
 
-    <section>
-        
+    <section class="form">
+        <div class="corpoForm">
+                <form action="" class="adicionar" id="novoItem">
+                    <label for="nome">Adicione seu game Preferido!</label>
+                    <input type="text" class="inputForm" name="nome" id="nome">
+                    <label for="quantidade">De uma nota a ele!</label>
+                    <input type="number" class="inputForm" name="quantidade" id="quantidade">
+                    <input type="submit" value="Adicionar" class="cadastrar" id="cadastrar">
+                </form>
+
+                <ul class="lista" id="lista">
+                </ul>
+            </div>
+            
+        </div>
 
     </section>
 
@@ -118,7 +132,8 @@
 
     </footer>
 
-<script src="../assets/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="../assets/js/main.js"></script>
     
 </body>
 </html>
