@@ -2,7 +2,7 @@
 {
     margin-top: 20px;
 	position: relative;
-	width: 380px;
+	width: 500px;
 	height: 550px;
 	background: #1c1c1c;
 	border-radius: 8px;
@@ -15,7 +15,7 @@
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 380px;
+	width: 500px;
 	height: 550px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#f8f6f6, #f8f6f6);
@@ -28,7 +28,7 @@
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 380px;
+	width: 500px;
 	height: 550px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#f8f6f6,#f8f6f6);
@@ -69,4 +69,54 @@ h2{
     margin-top: 10px;
     text-align:justify;
     padding: 0 10px;
+}
+
+.tamanhoImagemCard{
+	width:450px ;
+	border-radius: 8px;
+}
+
+@media (max-width:600px){
+	.boxCorpo
+	{
+		margin-top: 20px;
+		position: relative;
+		width: 350px;
+		height: 550px;
+		background: #1c1c1c;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	.boxCorpo::before 
+	{
+		content: '';
+		z-index: 1;
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		transform-origin: bottom right;
+		background: linear-gradient(0deg,transparent,#f8f6f6, #f8f6f6);
+		animation: animate 6s linear infinite;
+	}
+	.boxCorpo::after 
+	{
+		content: '';
+		z-index: 1;
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 350px;
+		height: 550px;
+		transform-origin: bottom right;
+		background: linear-gradient(0deg,transparent,#f8f6f6,#f8f6f6);
+		animation: animate 6s linear infinite;
+		animation-delay: -3s;
+	}
+
+
+	.tamanhoImagemCard{
+		width:300px ;
+	}
 }
