@@ -37,11 +37,14 @@ header{
 .caixa{
     margin: auto 0 ;
     max-width: 100%;
+    padding-top: 60px;
 }
 
 .imagemLogo{
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
+    padding-left: 30px;
+    
 }
 
 .navegação{
