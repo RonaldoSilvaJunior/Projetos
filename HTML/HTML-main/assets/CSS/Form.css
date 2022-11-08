@@ -86,3 +86,46 @@ input[type="submit"]:active
 	outline: none;
 }
 
+
+@media (max-width: 800px)
+{
+	.form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(0, 0, 0);
+		width: 100%;
+	}
+
+	.form label{
+		text-align: center;
+	}
+
+	.corpoForm{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		background-color: #23242a;
+		padding: 30px 0;
+	}
+
+	.inputForm{
+		width: 95%;
+		padding: 10px;
+		border: none;
+		border-radius: 10px;
+		background-color: #c1fbff;
+		outline: none;
+	}
+
+	.lista{
+		display: flex;
+		flex-direction: column;
+		padding: 30px 0;
+		margin-top: 20px;
+		margin: 0 auto;
+		width: 95%;
+	}
+}
